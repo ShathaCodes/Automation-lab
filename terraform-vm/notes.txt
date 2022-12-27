@@ -1,0 +1,4 @@
+terraform init => get providers
+terraform apply
+terraform plan
+terraform output

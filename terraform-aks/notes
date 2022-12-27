@@ -1,0 +1,12 @@
+terraform init
+terraform plan
+terraform apply
+terraform destroy
+
+echo "$(terraform output kube_config)" > ~/.kube/config
+
+kubectl get node --kubeconfig kubeconfig
+
+terraform state list
+terraform state show name_ress
+terraform console
